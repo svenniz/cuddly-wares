@@ -25,8 +25,10 @@ builder.Services.AddScoped<IProductFactory, ProductFactory>();
 builder.Services.AddScoped<IProductFactory, FoodProductFactory>();
 
 
-
+// Above this is configuration services
 var app = builder.Build();
+// From here and down is middleware
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

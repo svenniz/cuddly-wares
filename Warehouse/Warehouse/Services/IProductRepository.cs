@@ -12,6 +12,5 @@ namespace Warehouse.Services
         Task<IProduct> CreateAsync(Product product);
         Task<IProduct> UpdateAsync(Product product);
         Task<bool> DeleteAsync(int id);
-        Task<IProduct> CreateAsync(IProduct product);
     }
 }

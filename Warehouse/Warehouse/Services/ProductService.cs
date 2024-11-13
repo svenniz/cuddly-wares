@@ -36,11 +36,11 @@ namespace Warehouse.Services
 
             if (productType.ToLower() == "food")
             {
-                factory = _foodProductFactory;  // Use the specialized food product factory
+                factory = _foodProductFactory;
             }
             else
             {
-                factory = _productFactory;  // Use the generic factory for most products
+                factory = _productFactory;
             }
             var product = factory.CreateProduct(name, price);
             return await _productRepository.CreateAsync(product);
